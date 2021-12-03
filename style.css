@@ -704,5 +704,9 @@ footer a i:hover{
             flex-wrap: wrap;
            
             width: 350px;
-            }
+     
+   }
+   .navbar .max-width .logo{
+       font-size: 10px;
+   }
 }
