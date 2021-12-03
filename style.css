@@ -426,6 +426,7 @@ section .title::after{
     display: flex;
     flex-wrap: wrap;
     margin: 25px auto;
+    margin-left:0px;
 
 }.contact .contents .div1 .text{
     margin-bottom: 58px;
@@ -451,12 +452,12 @@ section .title::after{
 .contact .contents .div1 ul li i{
     color: blueviolet;
     font-size: 23px;
-    margin-right: 13px;
+    margin-right: 10px;
 }
 .contact .contents .seconddiv{
     width:auto;
     height: auto;
-    margin: 15px;
+   
     padding: 25px;
 
 }
@@ -469,7 +470,7 @@ section .title::after{
     
 }
 .contact .contents .seconddiv form{
-    padding: 23px;
+    padding: 15px;
     width:370px;
     height: auto;
     background-color: #555;
@@ -659,7 +660,7 @@ footer a i:hover{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -688,5 +689,20 @@ footer a i:hover{
         font-size: 29px;
         line-height: 30px;
     }
-    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        margin-right: 40px;
+        font-size: 35px;
+    }
+    .contact .contents .seconddiv form  .map {
+        margin-top: 500px;
+        flex-wrap: wrap;
+        width: 250px;
+        }
+    .contact .contents .seconddiv form  .map iframe{
+            flex-wrap: wrap;
+           
+            width: 350px;
+            }
 }
