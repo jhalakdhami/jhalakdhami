@@ -12,14 +12,100 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <meta name="description" content=" तपाइँ लाइ मेरो वेब साइट मा स्वागत छ।  यो झलक धामी को व्यक्तिगत साइट हो you can visit me on jhalakdhami.com.np  site . this site is developed by jhalak dhami. from kedarsyuen -6 binada bajhang nepal. it is the personal website of jhalak dhami. तपाँइ लाइ  jhalak dhami को बेब साइट् मा गएर ">
+    <meta name="description" content="this site is developed by jhalak dhami. he live in bajhang. ">
     <meta name="keywords" content="jhalak,dhami,bajhang,jhalakdhami,htmlcourse,css,menu,responsive navbarbyhtnlcss,dhami,hospitel,nepal,america,nepal,kathmandu,binada,bajhang,kedarsyuen6,binada,bajhng,kailali,durgalaxmi secoondary modelsecondary school,nepal,hotodesignwebsite,html,css,javascript,python,ls,jhahah,kailali,godawari,kanchanjunga,nepal,sagarnatha,nepal,dhami">
     <meta name="author" content="Jhalak Bahadur Dhami ">
     <meta http-equiv="refresh" content="50">
+    <style>
+        /* Popup container - can be anything you want */
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          margin-top:50px;
+        }
+        button{
+            height:60px;
+            width:150px;
+            border-radius:10px;
+            font-size:28px;
+            font-weight:600;
+            background-color:crimson;
+            border:none;
+            color:white;
+            padding:10px;
+            margin-top:40px;
+
+
+        }
+      
+        
+   
+        button:hover{
+        
+            background-color:transparent;
+            border:none;
+            color:black;
+            border:3px solid crimson;
+            transition:0.2s;
+            
+
+
+        }
+        
+      
+        .popup .popuptext {
+          visibility: hidden;
+          width: 160px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+    
+          left: 50%;
+          margin-left: -80px;
+        }
+        
+        /* Popup arrow */
+        .popup .popuptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+        }
+        
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+        }
+        
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;} 
+          to {opacity: 1;}
+        }
+        
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
+        </style>
 </head>
 <SCRIPT language=JavaScript>
-
-<!-- http://www.spacegun.co.uk -->
 
 var message = "You are not eligible for click right";
 
@@ -59,7 +145,9 @@ document.onmousedown = rtclickcheck;
                 You are welcome in my site..</div>
                 <div class="text-2">I'm Jhalak Dhami</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#">Hire me</a>
+                <div class="popup" onclick="myFunction()"><button>Hire me</button>
+                    <span class="popuptext" id="mypopup">I will update Soon..</span>
+                  </div>
             </div>
         </div>
     </section>
@@ -79,7 +167,8 @@ document.onmousedown = rtclickcheck;
                     engineering at Durgalaxmi secondary school, kailali nepal.
                     i went to bhawani secondary school banjh and shikshodaya secondary school
                     bagthala bajhang.i am boy of 18 years old. you can see more about me....</p>
-                    <a href="#">Download CV</a>
+                    <a href="">Download CV</a>
+                </div>
                 </div>
             </div>
         </div>
@@ -226,7 +315,7 @@ document.onmousedown = rtclickcheck;
 265607123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3
 m3!1m2!1s0x39a3e7ecdb64b7bd%3A0xe15ac8a579ca8c73!2s
 my%20home!5e1!3m2!1sen!2snp!4v1638291025008!5m2!1se
-n!2snp" width="350" height="450" style="border:0;margin-top:50px; margin-left:15px;"
+n!2snp" width="350" height="450" style="border:0;margin-top:50px;"
  allowfullscreen="active"
  loading="fast"></iframe>
 </div>
@@ -241,6 +330,18 @@ n!2snp" width="350" height="450" style="border:0;margin-top:50px; margin-left:15
       <a href="https://www.facebook.com/jhalak.dhami.7890"><i class="fab fa-facebook"></i></a> <a href="https://www.instagram.com/jhalak.dhami.7890/"><i class="fab fa-instagram-square"></i></a> <a href="https://twitter.com/home"><i class="fab fa-twitter-square"></i></a><a href="https://www.facebook.com/messages/t/100057393274790"><i class="fab fa-facebook-messenger"></i> </a>
       <span>Created By <a href"#">Jhalak dhami</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
     </footer>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("mypopup");
+          popup.classList.toggle("show");
+        }
+        function myFunction() {
+            var popup = document.getElementById("mypopup");
+            popup.classList.toggle("show");
+          }
+        </script>
+        
 
     <script src="script.js"></script>
 </body>
