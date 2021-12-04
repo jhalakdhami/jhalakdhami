@@ -17,6 +17,19 @@
     <meta name="author" content="Jhalak Bahadur Dhami ">
     <meta http-equiv="refresh" content="50">
 </head>
+<SCRIPT language=JavaScript>
+
+<!-- http://www.spacegun.co.uk -->
+
+var message = "You are not eligible for click right";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+
+</SCRIPT>
 <body>
     <div class="scroll-up-btn" id="btn11">
         <i class="fas fa-angle-up"></i>
